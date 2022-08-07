@@ -10,7 +10,7 @@ import os
 
 
 app = Flask(__name__)
-
+app.static_folder = 'static'
 #FILES ABOVE 10MB WONT BE TAKEN 
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 

@@ -1,16 +1,41 @@
 <html>
     <head>
         <title>Predict Plant Disease</title>
+        <!-- <link rel="stylesheet" href="plant_disease_predictor_app/templates/style.css"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/style.css') }}" />
+        <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+
+        
     </head>
     <body>
+        <div class="header">
+            <div class="heading">Plant Disease Predictor</div>
+            <div class="subheading">Check if your plant is infected by a quick image upload</div>
+        </div>
+       <div class="mid">
+       
        <div>
-       <h1>Plant Disease Detector</h1>
+       <p class="inst">Upload an image of the leaf of Apple, Blueberry, Cherry, Corn, Grape, Orange, Peach, Pepper, Raspberry, Soybean, Squash, Strawberry or a Tomato plant. </p>
        </div>
-       <div>
-       <form action="/predict" method="post" enctype="multipart/form-data">
+       
+       <div class="row">
+        <div><img id="leaf1" src="{{ url_for('static', filename='stylesheet/healthy_leaf.jpg') }}" alt="healthy leaf"/></div>
+        <div>
+       <form class="form" action="/predict" method="post" enctype="multipart/form-data">
         <input type="file" name="file"/>
         <input type="submit" value="Upload">
        </form>
        </div>
+       <div><img id="leaf2" src="{{ url_for('static', filename='stylesheet/sad_leaf.png') }}" alt="sad leaf"/></div>
+       </div>
+       </div>
+
+       </div>
+       <div class="footer">
+        <div class ="copyright">&copy; </div>
+        <a href="https://github.com/manaswitasolanki"><img id ="git" src="{{ url_for('static', filename='stylesheet/github.png') }}" alt="github logo"></a>
+        <div >manaswitasolanki</div>
+      </div>
     </body>
 </html>
