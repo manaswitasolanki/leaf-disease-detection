@@ -1,0 +1,104 @@
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.header{
+    background-color: #416a59;
+    color: #f5eec2;
+    font-family: 'Courier New', monospace;
+    width:100vw;
+    height:150px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+   
+}
+
+.mid{
+    background-color:#a9c25d;
+    display:flex;
+    flex-direction: column;
+    height:60vh;
+    width:100vw;
+    align-items:center;
+    gap:20px;
+}
+.heading{
+    font-size:60px;
+    font-weight:bolder;
+    
+    
+}
+
+.subheading{
+    font-size:25px;
+    font-style:italic;
+}
+
+.inst{
+    font-size:26px;
+    margin:30px;
+    font-family: 'Nunito', sans-serif;
+    color:brown;
+}
+.row{
+    display:flex;
+    flex-direction:row;
+    gap:50px;
+    align-items:center;
+    justify-content:center;
+    
+}
+.form{
+    background-color:#73a24e;
+    border:3px dotted yellow;
+    width:320px;
+    
+}
+
+#leaf1{
+    height:100px;
+    width:120px;
+    border:2px solid yellow;
+}
+
+#leaf2{
+    height:100px;
+    width:120px;
+    border:2px solid yellow;
+}
+
+
+.footer{
+    background-color:#2a2a2a;
+    color:white;
+    font-size:20px;
+    height:70px;
+    width:100vw;
+
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    
+}
+#git{
+    height:40px;
+    width:40px;
+}
+
+.mid2{
+    background-color:#a9c25d;
+    display:flex;
+    flex-direction: column;
+    height:60vh;
+    width:100vw;
+    align-items:center;
+    gap:20px;
+
+}
